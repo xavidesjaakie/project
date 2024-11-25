@@ -1,0 +1,87 @@
+
+
+  nav ul{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: blue;
+    width: 105%;
+    margin-left:  -50px;
+    margin-top: -10px;
+    height: 150px;
+  }
+
+  nav {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  nav ul li {
+  
+
+    padding: 40px;
+    margin: 10px; 
+    margin-left:  -50px;
+    
+  }
+  
+
+  nav ul h1 {color: white; 
+    
+}
+nav ul li img  {margin-left: -350px;
+margin-top: -45px;}
+  nav ul li a {
+    text-decoration: none;
+    margin: 75px;
+    font-size: 25px; 
+    color: white;
+  }
+
+  p {font-size: 18px; }
+
+  h3 {font-size: 25px;}
+
+  body{background-color: lightslategray;}
+  
+  .content {padding-left: 20px;}
+  #bank-app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+}
+
+#bank-app button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bank-app input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    font-size: 14px;
+}
+
+#transaction-log {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#transaction-log li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+h5 {color: green; font-size: 20px;}
+#message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
