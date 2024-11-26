@@ -1,0 +1,131 @@
+/* styles.css */
+body {
+  background-color: lightslategray;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: blue;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 20px;
+  justify-content: center;
+
+  align-content: center;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#bank-app {
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#geldStatus {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#transaction-list-container {
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
+  height: 400px; 
+  overflow-y: auto;
+  margin-bottom: -5px;
+}
+
+#transaction-list-container h3 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+#transaction-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  align-items: start;
+}
+.paginacontent {margin-left: 25px;}
+#transaction-list li {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  
+}
+
+#transaction-list li .transactie-id {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#clear-transactions {
+  background-color: red;
+  color: white;
+  margin-top: 20px;
+}
+#login-container {
+  background-color: lightgray;
+  color: black;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
