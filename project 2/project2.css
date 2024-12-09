@@ -1,4 +1,3 @@
-/* styles.css */
 body {
   background-color: lightslategray;
   font-family: Arial, sans-serif;
@@ -21,15 +20,16 @@ header nav ul {
 
 header nav ul li {
   margin: 0 20px;
-  justify-content: center;
-
-  align-content: center;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+}
+
+.paginacontent {
+  margin: 20px;
 }
 
 #bank-app {
@@ -42,90 +42,75 @@ header nav ul li a {
   text-align: center;
 }
 
-#geldStatus {
+#saldoDisplay {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-#transaction-list-container {
-  background-color: lightgray;
-  color: black;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 100%;
-  text-align: center;
-  height: 400px; 
-  overflow-y: auto;
-  margin-bottom: -5px;
-}
-
-#transaction-list-container h3 {
-  margin-bottom: 20px;
-  color: black;
-}
-
-#transaction-list {
-  list-style-type: none;
+ul#transaction-list {
+  list-style: none;
   padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
-  align-items: start;
 }
-.paginacontent {margin-left: 25px;}
-#transaction-list li {
+
+ul#transaction-list li {
   background-color: white;
   color: black;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+#saldo-controls {
+  margin: 20px auto;
   text-align: center;
+}
+
+#saldo-controls input {
+  padding: 10px;
   font-size: 16px;
-  position: relative;
-  
+  width: 150px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-#transaction-list li .transactie-id {
-  color: red;
-  font-weight: bold;
-}
-
-button {
+#saldo-controls button {
   padding: 10px 20px;
   font-size: 16px;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
 
-button:hover {
+#saldo-controls button:hover {
   background-color: #ddd;
 }
+.paginacontent{margin-left: 20px;}
 
-#clear-transactions {
-  background-color: red;
-  color: white;
-  margin-top: 20px;
-}
-#login-container {
+#overschrijving-controls {
+  margin: 20px auto;
+  text-align: center;
   background-color: lightgray;
-  color: black;
-  width: 300px;
-  margin: 100px auto;
   padding: 20px;
   border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#login-container input {
-  width: calc(100% - 20px);
+#overschrijving-controls input, #overschrijving-controls select {
+  margin: 10px;
   padding: 10px;
-  margin: 10px 0;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+#overschrijving-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+#overschrijving-controls button:hover {
+  background-color: #ddd;
 }

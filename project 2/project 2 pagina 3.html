@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
     <link rel="stylesheet" href="project2.css">
+    <title>Overzicht Rekeningen</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="project2.html">Home</a></li>
-                <li><a href="project2 pagina2.html">Rekening</a></li>
-                <li><a href="project2 pagina3.html">Overschrijvingen</a></li>
+                <li><a href="project2 pagina2.html">Rekeningen</a></li>
+                <li><a href="project 2 pagina 3.html">Overzicht Rekeningen</a></li>
                 <li><button id="logout">Uitloggen</button></li>
             </ul>
         </nav>
     </header>
-
-    <div id="bank-app">
-        <h2>Rekening</h2>
-        <p>Huidig saldo: <span id="geldStatus">200</span></p>
-
-        <button onclick="voegGeldToe(10)">Voeg €10 toe</button>
-        <button onclick="voegGeldToe(20)">Voeg €20 toe</button>
-        <button onclick="verlaagGeld(10)">Verlaag €10</button>
-        <button onclick="verlaagGeld(20)">Verlaag €20</button>
+<div class="paginacontent">
+    <div id="rekeningen-overzicht">
+        <h2>Overzicht van Alle Rekeningen</h2>
+        <p>Hieronder vindt u een overzicht van al uw rekeningen en hun saldi:</p>
+        <table id="rekeningTable">
+            <thead>
+                <tr>
+                    <th>Rekening Naam</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
     </div>
-
-    <div id="transaction-list-container">
-        <h3>Transacties:</h3>
-        <ul id="transaction-list">
-        </ul>
-        <button id="clear-transactions" onclick="wisTransacties()">Wis alle transacties</button>
-    </div>
-
+</div>
     <script src="Project2.js"></script>
 </body>
 </html>
